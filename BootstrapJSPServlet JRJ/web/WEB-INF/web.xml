@@ -8,6 +8,10 @@
         <servlet-name>AgregaCliente</servlet-name>
         <servlet-class>org.corcho.AgregaCliente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Cambios</servlet-name>
+        <servlet-class>org.corcho.Cambios</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ClienteList</servlet-name>
         <url-pattern>/ClienteList</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>AgregaCliente</servlet-name>
         <url-pattern>/AgregaCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cambios</servlet-name>
+        <url-pattern>/Cambios</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

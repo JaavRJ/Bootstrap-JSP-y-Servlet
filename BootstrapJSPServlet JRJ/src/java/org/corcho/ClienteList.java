@@ -88,14 +88,14 @@ public class ClienteList extends HttpServlet
                     out.println( String.format( "<td>%s</td>" , cliente.getGenero() ) );
                     out.println( String.format( "<td>%s</td>" , cliente.getCalif()) );
                     out.println( String.format( "<td>%d</td>" , cliente.getEdad() ) );
-                    out.println( String.format( "<td>%s</td>" , "<a href=\"ClienteList\"?id=" + j +"&borrar=\"Submit\">Borrar</a> <a href=\"AgregaCliente\"?id=" + j++ +"&editar=\"Submit\">Editar</a>" ) );
-                    out.println("</tr>");
+                    out.println( String.format( "<td>%s" , "<a href=\"ClienteList?id=" + j +"&borrar=Submit\">Borrar</a> " ) );
+                    out.println( String.format( "%s" , "<a href =\"Cambios?id=" + j +"\">Cambiar</a> </td>" ) );                    out.println("</tr>");
                     j++;
                 }
             }
 
             out.println("</table>");
-            out.println("<a href=\"AgregaCliente\">Nuevo cliente</a> ");
+            out.println("<a href=\"AgregaCliente\">Nuevo cliente</a> <a  ");
             out.println("</body>");
             out.println("</html>");
         }
